@@ -1,0 +1,121 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.convenio</groupId>
+  <artifactId>Convenios</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Prueba de Concepto ws Convenios</name>
+  <description>Un proyecto para poner a prueba a alto nivel la definicion arquitectonica</description>
+  
+  	<properties>
+		<project-version>1.0</project-version>
+		<!-- Spring -->
+		<springframework.version>4.0.3.RELEASE</springframework.version>
+	</properties>
+	
+	<!-- REPOSITORIO DESDE DONDE CARGA EL DRIVER -->
+	<!-- JBoss repository for Hibernate -->
+	<repositories>
+		<repository>
+			<id>JBoss repository</id>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
+ 
+  	<dependencies>
+		<!-- HIBERNATE -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>4.3.11.Final</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>4.3.2.Final</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-entitymanager</artifactId>
+		    <version>4.3.11.Final</version>
+		</dependency>
+		
+		<!-- ORACLE JDBC driver -->
+		<dependency>
+		   <groupId>com.oracle</groupId>
+		   <artifactId>ojdbc6</artifactId>
+		   <version>11.2.0.3</version>
+	  	</dependency>
+
+		
+		<!-- LOG4J -->
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		    <version>2.3</version>
+		    <type>pom</type>
+		</dependency>
+		
+		<!-- SLF4J -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+			<scope>compile</scope>
+		</dependency>
+ 
+		<!-- Spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jdbc</artifactId>
+	    <version>${springframework.version}</version>
+		</dependency>
+			    
+	    <!-- JASYPT -->
+	    <!-- https://mvnrepository.com/artifact/org.jasypt/jasypt -->
+		<dependency>
+		    <groupId>org.jasypt</groupId>
+		    <artifactId>jasypt</artifactId>
+		    <version>1.9.2</version>
+		</dependency>
+		
+	</dependencies>	
+	
+  <build>
+  	<plugins>
+ 		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>2.3.2</version>
+			<configuration>
+				<source>1.6</source>
+				<target>1.6</target>
+			</configuration>
+			</plugin>
+	</plugins>
+   </build>
+</project>
+
