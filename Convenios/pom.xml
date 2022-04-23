@@ -9,7 +9,7 @@
   	<properties>
 		<project-version>1.0</project-version>
 		<!-- Spring -->
-		<springframework.version>4.0.3.RELEASE</springframework.version>
+		<springframework.version>5.3.19</springframework.version>
 	</properties>
 	
 	<!-- REPOSITORIO DESDE DONDE CARGA EL DRIVER -->
